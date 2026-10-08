@@ -1,0 +1,15 @@
+// hashSenha.js
+import bcrypt from "bcrypt";
+
+const senha = "hamuyela@007#"; // tua senha original
+
+const gerarHash = async () => {
+  const hash = await bcrypt.hash(senha, 10);
+  console.log("Hash gerado:", hash);
+};
+
+gerarHash();
+
+
+
+
